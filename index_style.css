@@ -1,0 +1,43 @@
+#header {
+    background-color: #0F2245;
+    padding-bottom: 10px;
+    width: 100%;
+    position: fixed;
+}
+
+#navBar {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding-top: 4px;
+}
+
+#links {
+    float: right;
+    display: block;
+}
+
+a:hover {
+    color: #CCCCCC;
+}
+
+.header-buttons {
+    font-family: 'Roboto', sans-serif;
+    border: solid;
+    background-color: white;
+    border-color: white;
+    color: #0F2245;
+    float: right;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#facebookShare {
+    margin-right: 30px;
+}
