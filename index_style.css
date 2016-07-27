@@ -1,6 +1,7 @@
 /* Removes white border around webpage */
 body {
     margin: 0px;
+    background-color: #0F2245
 }
 
 h1, h2, h3 {
