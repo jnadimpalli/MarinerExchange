@@ -3,49 +3,49 @@ body {
     margin: 0px;
 }
 
-#header {
-    background-color: #0F2245;
-    padding-bottom: 10px;
-    width: 100%;
-}
+/*#header {*/
+/*    background-color: #0F2245;*/
+/*    padding-bottom: 10px;*/
+/*    width: 100%;*/
+/*}*/
 
-#navBar {
-    text-align: center;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    display: inline-block;
-    padding-top: 4px;
-}
+/*#navBar {*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*    font-family: 'Roboto', sans-serif;*/
+/*    display: inline-block;*/
+/*    padding-top: 4px;*/
+/*}*/
 
-#links {
-    float: right;
-    display: block;
-}
+/*#links {*/
+/*    float: right;*/
+/*    display: block;*/
+/*}*/
 
 a:hover {
     color: #CCCCCC;
 }
 
-.header-buttons {
-    font-family: 'Roboto', sans-serif;
-    border: solid;
-    background-color: white;
-    border-color: white;
-    color: #0F2245;
-    float: right;
-    text-align: center;
+/*.header-buttons {*/
+/*    font-family: 'Roboto', sans-serif;*/
+/*    border: solid;*/
+/*    background-color: white;*/
+/*    border-color: white;*/
+/*    color: #0F2245;*/
+/*    float: right;*/
+/*    text-align: center;*/
     /* Can't use inline-block with float: right */
     /*display: inline-block;*/
-    vertical-align: top;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+/*    vertical-align: top;*/
+/*    margin-left: 10px;*/
+/*    margin-right: 10px;*/
+/*    padding-left: 10px;*/
+/*    padding-right: 10px;*/
+/*}*/
 
-#facebookShare {
-    margin-right: 30px;
-}
+/*#facebookShare {*/
+/*    margin-right: 30px;*/
+/*}*/
 
 #header-img{
     width: 100%;
@@ -55,4 +55,94 @@ a:hover {
 
 #header-img img {
     margin: -1250px 0 0 -1000px;
+}
+
+
+
+
+/* NAVBAR STYLING */
+.navbar {
+    background-color: #0F2245;
+    height: 100px;
+    padding-top: 50px;
+    border: 0px;
+    outline: 0px;
+    border-radius: 0px;
+    font-size: 18px;
+    color: rgb(28,105,103);
+}
+.navbar-brand > img {
+    margin-top: -50px;
+}
+.navButtons > li > a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(28,105,103);
+}
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 3rem;
+    height: 3rem;
+    padding-top: 0;
+    color: white !important;
+}
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+}
+.navbar-brand>img {
+  height: 10rem;
+  padding: 15px;
+  width: auto;
+}
+.navbar {
+    padding-bottom: 7rem !important;
+}
+/* Customize navbar collapse colors */
+.collapsing, .in {background-color: #f7f7f7;}
+.collapsing ul li a, .in ul li a {color: #555!important;}
+.collapsing ul li a:hover, .in ul li a:hover {color: grey !important;}
+.active{
+    background-color: red !important;
+    color: red !important;
+    background: red !important;
+}
+/* Fixes the navbar wrapping on smaller screens issue */
+/*@media (max-width:940px){*/
+/*    .navbar-header {*/
+/*        float: none;*/
+/*    }*/
+/*    .navbar-left,.navbar-right {*/
+/*        float: none !important;*/
+/*    }*/
+/*    .navbar-toggle {*/
+/*        display: block;*/
+/*    }*/
+/*    .navbar-collapse {*/
+/*        border-top: 1px solid transparent;*/
+/*        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);*/
+/*    }*/
+/*    .navbar-fixed-top {*/
+/*        top: 0;*/
+/*        border-width: 0 0 1px;*/
+/*     }*/
+/*    .navbar-collapse.collapse {*/
+/*        display: none!important;*/
+/*    }*/
+/*    .navbar-nav {*/
+/*        float: none!important;*/
+/*        margin-top: 7.5px;*/
+/*     }*/
+/*     .navbar-nav>li {*/
+/*        float: none;*/
+/*    }*/
+/*    .navbar-nav>li>a {*/
+/*        padding-top: 10px;*/
+/*        padding-bottom: 10px;*/
+/*    }*/
+/*    .collapse.in{*/
+/*        display:block !important;*/
+/*    } */
+/*}*/
+/* Active element color */
+.navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus {
+  background-color: grey !important;
 }
