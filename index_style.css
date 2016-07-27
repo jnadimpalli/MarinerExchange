@@ -3,6 +3,29 @@ body {
     margin: 0px;
 }
 
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    background-color: #0F2245;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+#navBar {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding-top: 4px;
+}
+
+#links {
+    float: right;
+    display: block;
+}
+
 a:hover {
     color: #CCCCCC;
 }
@@ -12,10 +35,12 @@ a:hover {
     width: 100%;
     height: 400px;
     overflow: hidden;
+    position: relative;
 }
 
 #header-img img {
     margin: -1250px 0 0 -1000px;
+    zoom: 50%;
 }
 
 
@@ -106,4 +131,21 @@ a:hover {
 /* Active element color */
 .navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus {
   background-color: grey !important;
+}
+
+#header-img h1 {
+    color: white;
+    position: absolute;
+    top: 150px;
+    text-align: center;
+    font-size: 350%;
+    width: 100%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.left {
+    position:absolute;
+    left:0; top:92px; bottom: 0;
+    width: 178px;
+    color: #0F2245;
 }
