@@ -9,20 +9,27 @@
   <!--<script src"./public/js/jquery-3.1.0.min.js"></script>-->
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="./public/js/bootstrap.min.js"></script>
+  <script>
+    // Smooth Scroll on clicking nav items
+    $('#nav a').click(function() {
+      var $href = $(this).attr('href');
+      $('body').stop().animate({
+        scrollTop: $($href).offset().top - 50
+      }, 800);
+      return false;
+    });
+  </script>
   <meta charset="UTF-8">
   <title>Mariner Exchange</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#nav" data-offset="300">
 
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top" id="nav">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
-
-
       <div class="navbar-header">
         <div class="container-fluid">
-
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -39,20 +46,20 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Our Product <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">Reviews</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Write a Review</a></li>
-          <li><a href="#">Service Providers</a></li>
-          <li><a href="#">Weather</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact Us</a></li>
+        <ul class="nav navbar-nav red">
+          <li class="active"><a href="#ourProduct">Our Product <span class="sr-only">(current)</span></a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#writeReview">Write a Review</a></li>
+          <li><a href="#serviceProviders">Service Providers</a></li>
+          <li><a href="#weather">Weather</a></li>
+          <li><a href="#aboutUs">About</a></li>
+          <li><a href="#contactUs">Contact Us</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">For Pros</a></li>
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#pros">For Pros</a></li>
+          <li><a href="#facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
         </ul>
 
       </div>
@@ -63,16 +70,16 @@
 
   <div class="container-fluid" id="bannerContainer">
     <div id="bannerHolder">
-              <div id="content">
-    <div id="header-img">
-      <img src="header-img.png">
-      <h1>Connecting Boaters with Marine Services</h1>
-    </div>
+      <div id="content">
+        <div id="header-img">
+          <img src="header-img.png">
+          <h1>Connecting Boaters with Marine Services</h1>
+        </div>
 
-    <div class="left">
-      left
-    </div>
-  </div>
+        <div class="left">
+          left
+        </div>
+      </div>
     </div>
   </div>
 
@@ -150,20 +157,15 @@
         <div class="left">
           left
         </div>
-        
+
         <h3>Live Weather Forecast</h3>
         <div class="embed-responsive embed-responsive-16by9" id="liveForecastFrame">
-        <iframe src="https://embed.windyty.com/?33.519,-86.808,6,menu,message,ip,metric.temp.F" width="750" height="500" frameborder="0"></iframe>
+          <iframe src="https://embed.windyty.com/?33.519,-86.808,6,menu,message,ip,metric.temp.F" width="750" height="500" frameborder="0"></iframe>
         </div>
-        
-        
-        
+
+
+
       </div>
-
-      
-
-
-
 
       <div id="aboutUs">
         <!--Using this image for now as a dummy-->
@@ -192,7 +194,7 @@
     </div>
   </div>
   <div class="container-fluid" id="footerContainer">
-        <div id="footer">
+    <div id="footer">
       <p>Copyright &copy; Mariner Exchange, Inc. All rights reserved.</p>
       <a class="btn btn-social-icon btn-lg btn-facebook" href="#"><i class="fa fa-facebook"></i></a>
       <br>
@@ -201,6 +203,7 @@
 
     </div>
   </div>
+
 
 </body>
 
