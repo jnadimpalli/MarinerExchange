@@ -150,20 +150,20 @@ a:hover {
 }
 
 
-.left {
-    position:absolute;
-    left:0; top:583px; bottom: 0;
-    width: 175px;
-    background: #0F2245;
-}
+/*.left {*/
+/*    position:absolute;*/
+/*    left:0; top:583px; bottom: 0;*/
+/*    width: 175px;*/
+/*    background: #0F2245;*/
+/*}*/
 
-.right {
-    position:absolute;
-    right:0; top:583px; bottom: 0;
-    float: right;
-    width: 175px;
-    background: #0F2245;
-}
+/*.right {*/
+/*    position:absolute;*/
+/*    right:0; top:583px; bottom: 0;*/
+/*    float: right;*/
+/*    width: 175px;*/
+/*    background: #0F2245;*/
+/*}*/
 
 .content {
     margin-left: 175px;
@@ -393,4 +393,38 @@ fieldset[disabled] .btn-facebook.active {
     /*background-color: #FFCD00;*/
     /*color: #002753 !important;*/
 
+}
+
+
+
+#myCarousel {
+    width: 60%;
+    margin: auto;
+    background-color: white;
+}
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 20%;
+      margin: auto;
+  }
+  .carousel-caption {
+      position: relative;
+      left: auto;
+    right: auto;
+  }
+  .carousel-caption h3 {
+      color: black;
+  }
+  .carousel-caption p {
+      color: #0F2245;
+  }
+  .carousel-control.left, .carousel-control.right {
+    background-image: none;
+    background-color: rgba(0,0,0,.3);
+
+}
+
+.vertCenter {
+    position: absolute;
+    top: 50%;
 }
