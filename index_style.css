@@ -151,18 +151,41 @@ a:hover {
 
 
 /*.left {*/
+
+
 /*    position:absolute;*/
+
+
 /*    left:0; top:583px; bottom: 0;*/
+
+
 /*    width: 175px;*/
+
+
 /*    background: #0F2245;*/
+
+
 /*}*/
 
+
 /*.right {*/
+
+
 /*    position:absolute;*/
+
+
 /*    right:0; top:583px; bottom: 0;*/
+
+
 /*    float: right;*/
+
+
 /*    width: 175px;*/
+
+
 /*    background: #0F2245;*/
+
+
 /*}*/
 
 .content {
@@ -184,6 +207,7 @@ a:hover {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5rem;
 }
 
 #footer {
@@ -218,44 +242,44 @@ a:hover {
 }
 
 #review-div {
-	padding: 0px 100px 25px 100px;
-	border-top: 2px solid #0F2245;
-	border-bottom: 2px solid #0F2245;
+    padding: 0px 100px 25px 100px;
+    border-top: 2px solid #0F2245;
+    border-bottom: 2px solid #0F2245;
 }
 
 #review-form {
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .text-short {
-	width: 50%;
-	padding 12px 20px;
-	margin 8px 0;
-	box-sizing: border-box;
-	border: 3px solid #0F2245;
+    width: 50%;
+    padding 12px 20px;
+    margin 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #0F2245;
 }
 
 input[type="radio"] {
-  margin-left : 28px;
-  line-height  : 24px;
+    margin-left: 28px;
+    line-height: 24px;
 }
 
-input[type="radio"] + label {
-	display: inline-block;
+input[type="radio"]+ label {
+    display: inline-block;
 }
 
 .text-long {
-	width: 50%;
-	border: 3px solid #0F2245;
-	padding 12px 20px;
-	margin 8px 0;
-	box-sizing: border-box;
+    width: 50%;
+    border: 3px solid #0F2245;
+    padding 12px 20px;
+    margin 8px 0;
+    box-sizing: border-box;
 }
 
-input:focus, textarea:focus {
-	background: #D1B419;
+input:focus,
+textarea:focus {
+    background: #D1B419;
 }
-
 
 
 /* From https://lipis.github.io/bootstrap-social/ */
@@ -392,36 +416,38 @@ fieldset[disabled] .btn-facebook.active {
     border-radius: 0.5rem;
     /*background-color: #FFCD00;*/
     /*color: #002753 !important;*/
-
 }
-
-
 
 #myCarousel {
     width: 60%;
     margin: auto;
     background-color: white;
 }
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 20%;
-      margin: auto;
-  }
-  .carousel-caption {
-      position: relative;
-      left: auto;
-    right: auto;
-  }
-  .carousel-caption h3 {
-      color: black;
-  }
-  .carousel-caption p {
-      color: #0F2245;
-  }
-  .carousel-control.left, .carousel-control.right {
-    background-image: none;
-    background-color: rgba(0,0,0,.3);
 
+.carousel-inner> .item> img,
+.carousel-inner> .item> a> img {
+    width: 20%;
+    margin: auto;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+.carousel-caption h3 {
+    color: black;
+}
+
+.carousel-caption p {
+    color: #0F2245;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .vertCenter {
