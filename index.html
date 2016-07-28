@@ -25,7 +25,8 @@
         if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
         if (target.length == 0) target = $('html');
         if ($('.navbar-toggle').css('display') != 'none') {
-          $(".navbar-toggle").trigger("click");
+          // $(".navbar-toggle").trigger("click");
+          $('.navbar-collapse').collapse('hide');
         }
         $('html, body').animate({
           scrollTop: target.offset().top
