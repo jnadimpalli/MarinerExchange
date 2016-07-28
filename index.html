@@ -109,10 +109,40 @@
 
           <div id="writeReview">
             <!--Using this image for now as a dummy-->
-              <div class="sub-header-img">
-                  <img src="header-img.png">
-                  <h2>Write a Review</h2>
-              </div>
+						<div id="review-div">
+							<div class="sub-header-img">
+								<h2>Write a Review</h2>
+							</div>
+							<form id ="review-form" method="post" action="review_acceptor.php"  accept-charset="UTF-8">
+								<fieldset>
+									Email Address:<br>
+									<input class="text-short" type="text" name="email"><br>
+									Contractor:<br>
+									<input class="text-short" type="text" name="contractor"><br>
+									Contractor Location (City, State):<br>
+									<input class="text-short" type="text" name="location"><br>
+									Quality of Service:<br>
+									<label>
+										<input class="radio-button" type="radio" name="quality" value="1" id="1"> Poor (1)
+									</label>
+									<label>
+										<input class="radio-button" type="radio" name="quality" value="2" id="2"> Fine (2)
+									</label>
+									<label>
+										<input class="radio-button" type="radio" name="quality" value="3" id="3"> Good (3)
+									</label>
+									<label>
+										<input class="radio-button" type="radio" name="quality" value="4" id="4"> Great (4)
+									</label>
+									<label>
+										<input class="radio-button" type="radio" name="quality" value="5" id="5"> Excellent (5)
+									</label><br>
+									Additional Information:<br>
+									<textarea class="text-long" name="add-info" form="review-form" rows="10"></textarea><br>
+									<input type="submit" name="submit" value="Submit">
+								</fieldset>
+							</form>
+						</div>
           </div>
 
           <div id="serviceProviders">

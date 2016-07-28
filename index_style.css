@@ -217,6 +217,46 @@ a:hover {
     color: white;
 }
 
+#review-div {
+	padding: 0px 100px 25px 100px;
+	border-top: 2px solid #0F2245;
+	border-bottom: 2px solid #0F2245;
+}
+
+#review-form {
+	font-family: 'Roboto', sans-serif;
+}
+
+.text-short {
+	width: 50%;
+	padding 12px 20px;
+	margin 8px 0;
+	box-sizing: border-box;
+	border: 3px solid #0F2245;
+}
+
+input[type="radio"] {
+  margin-left : 28px;
+  line-height  : 24px;
+}
+
+input[type="radio"] + label {
+	display: inline-block;
+}
+
+.text-long {
+	width: 50%;
+	border: 3px solid #0F2245;
+	padding 12px 20px;
+	margin 8px 0;
+	box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+	background: #D1B419;
+}
+
+
 
 /* From https://lipis.github.io/bootstrap-social/ */
 
