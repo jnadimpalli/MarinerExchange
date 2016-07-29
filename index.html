@@ -20,6 +20,12 @@
     // });
 
     $(document).ready(function() {
+      // Needs more testing but should prevent
+      // carousel buttons linking to #myCarousel
+      // when clicked before page is finished loading
+      $('.carousel a').click(function(e){
+        e.preventDefault();
+      })
       $('nav a[href^="#"]').click(function() {
         var target = $(this.hash);
         if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
