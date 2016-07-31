@@ -107,6 +107,26 @@ a:hover {
     width: 100%;
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
 }
+
+#faq-header-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+#faq-header-img img {
+    margin: -1200px 0 0 -400px;
+    zoom: 50%;
+}
+
+#faq-header-img h2 {
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
 /*#endregion HeaderImages*/
 
 /*#region OurProduct */
@@ -189,6 +209,29 @@ a:hover {
     display: none;
 }
 /*#endregion OurProduct */
+
+/*#region reviews*/
+#ratings {
+    display: flex;
+    justify-content: space-between;
+    margin: 75px;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.star-rating img {
+    zoom: 5%;
+    margin: auto;
+}
+
+.rating-detail {
+    text-align: center;
+}
+/*#endregion reviews*/
 
 /* NAVBAR STYLING */
 
