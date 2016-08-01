@@ -40,7 +40,9 @@ a:hover {
     color: #CCCCCC;
 }
 
+
 /*#region HeaderImages*/
+
 .header-img {
     width: 100%;
     height: 400px;
@@ -122,35 +124,78 @@ a:hover {
     margin: -1900px 0 0 -400px;
     zoom: 50%;
 }
+
+
 /*#endregion HeaderImages*/
 
+
 /*#region OurProduct */
-#whatIsIt {
-    margin-left: 350px;
-    margin-top: 100px;
-}
 
-#app-store-download {
-    margin-left: 270px;
-    margin-top: 100px;
-}
 
-#marExDesc {
-    float: left;
-}
+/*#whatIsIt {*/
 
-.right-img {
-    float: right;
-    display: inline-block;
-    margin-right: 150px;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    zoom: 75%;
-}
 
-#how-it-works h2 {
-    text-align: center;
-}
+/*    margin-left: 350px;*/
+
+
+/*    margin-top: 100px;*/
+
+
+/*}*/
+
+
+/*#app-store-download {*/
+
+
+/*    margin-left: 270px;*/
+
+
+/*    margin-top: 100px;*/
+
+
+/*}*/
+
+
+/*#marExDesc {*/
+
+
+/*    float: left;*/
+
+
+/*}*/
+
+
+/*.right-img {*/
+
+
+/*    float: right;*/
+
+
+/*    display: inline-block;*/
+
+
+/*    margin-right: 150px;*/
+
+
+/*    margin-top: 50px;*/
+
+
+/*    margin-bottom: 100px;*/
+
+
+/*    zoom: 75%;*/
+
+
+/*}*/
+
+
+/*#how-it-works h2 {*/
+
+
+/*    text-align: center;*/
+
+
+/*}*/
 
 #how-it-works-imgs {
     display: flex;
@@ -176,24 +221,66 @@ a:hover {
     opacity: .5;
 }
 
-.left-arrow {
-    height: 500px;
-    vertical-align: middle;
-    margin: auto;
-    zoom: 10%;
+.left-arrow,
+.right-arrow {
+    /*display:block;*/
+    /*font-size: 10rem;*/
+    /*text-align:center;*/
+    /*vertical-align: baseline !important;*/
+    /*line-height: inherit;*/
+    /*vertical-align: middle;*/
+    text-align: center;
+    margin-top: 80%;
+    /*position: relative !important;*/
+    /*top:50% !important;*/
+    /* transform: translateY(-80%) !important;*/
 }
 
-.right-arrow {
-    height: 500px;
-    vertical-align: middle;
-    margin: auto;
-    zoom: 10%;
-    transform: scaleX(-1);
-}
+
+/*.left-arrow {*/
+
+
+/*    height: 500px;*/
+
+
+/*    vertical-align: middle;*/
+
+
+/*    margin: auto;*/
+
+
+/*    zoom: 10%;*/
+
+
+/*}*/
+
+
+/*.right-arrow {*/
+
+
+/*    height: 500px;*/
+
+
+/*    vertical-align: middle;*/
+
+
+/*    margin: auto;*/
+
+
+/*    zoom: 10%;*/
+
+
+/*    transform: scaleX(-1);*/
+
+
+/*}*/
 
 #how-it-works-txt {
+    width: 50%;
+    margin: auto;
     text-align: center;
     margin-bottom: 10%;
+    font-size: 200%;
 }
 
 .selected-txt {
@@ -203,13 +290,17 @@ a:hover {
 .unselected-txt {
     display: none;
 }
+
+
 /*#endregion OurProduct */
 
+
 /*#region reviews*/
+
 #ratings {
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
-    margin: 75px;
+    margin: 2rem;
 }
 
 .star-rating {
@@ -226,7 +317,10 @@ a:hover {
 .rating-detail {
     text-align: center;
 }
+
+
 /*#endregion reviews*/
+
 
 /* NAVBAR STYLING */
 
@@ -332,9 +426,14 @@ a:hover {
 
 /*}*/
 
-.content {
-    margin-left: 175px;
-}
+
+/*.content {*/
+
+
+/*    margin-left: 175px;*/
+
+
+/*}*/
 
 .mainBody {
     width: 90%;
@@ -386,7 +485,7 @@ a:hover {
 }
 
 #review-form {
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-left: 175px;
     margin-bottom: 75px;
     margin-top: 30px;
@@ -426,19 +525,20 @@ input.radio {
     border: 0;
     color: white;
     background: #002753;
-    box-shadow:none;
+    box-shadow: none;
     border-radius: 0px;
-    width: 12em;  height: 4em;
+    width: 12em;
+    height: 4em;
     font-size: larger;
     margin-top: 15px;
 }
 
 .text-long {
-	width: 50%;
-	border: 3px solid #0F2245;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
+    width: 50%;
+    border: 3px solid #0F2245;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
 
 input:focus,
@@ -450,6 +550,7 @@ textarea:focus {
     text-align: center;
     margin-top: 100px;
 }
+
 
 /* From https://lipis.github.io/bootstrap-social/ */
 
@@ -585,5 +686,8 @@ fieldset[disabled] .btn-facebook.active {
     border-radius: 0.5rem;
     /*background-color: #FFCD00;*/
     /*color: #002753 !important;*/
+}
 
+.img-responsive {
+    margin: 0 auto;
 }
