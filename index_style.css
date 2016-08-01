@@ -75,11 +75,6 @@ a:hover {
     position: relative;
 }
 
-.sub-header-img img {
-    margin: -1750px 0 0 -400px;
-    zoom: 50%;
-}
-
 .sub-header-img h2 {
     color: white;
     position: absolute;
@@ -88,11 +83,9 @@ a:hover {
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
 }
 
-#review-header-img {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
+#our-product-header-img img {
+    margin: -1750px 0 0 -400px;
+    zoom: 50%;
 }
 
 #review-header-img img {
@@ -100,32 +93,34 @@ a:hover {
     zoom: 50%;
 }
 
-#review-header-img h2 {
-    color: white;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
-}
-
-#faq-header-img {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-}
-
 #faq-header-img img {
     margin: -1200px 0 0 -400px;
     zoom: 50%;
 }
 
-#faq-header-img h2 {
-    color: white;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+#write-review-header-img img {
+    margin: -1300px 0 0 -400px;
+    zoom: 50%;
+}
+
+#service-provider-header-img img {
+    margin: -1800px 0 0 -535px;
+    zoom: 50%;
+}
+
+#weather-header-img img {
+    margin: -1500px 0 0 -400px;
+    zoom: 50%;
+}
+
+#about-us-header-img img {
+    margin: -1500px 0 0 -400px;
+    zoom: 50%;
+}
+
+#contact-us-header-img img {
+    margin: -1900px 0 0 -400px;
+    zoom: 50%;
 }
 /*#endregion HeaderImages*/
 
