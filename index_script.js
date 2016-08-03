@@ -2,6 +2,9 @@
  * Created by Jitesh on 7/29/2016.
  */
 $(document).ready(function(){
+    $('#collapseOne').collapse("hide");
+
+    
     var imgNum = 0;
 
     $(".left-arrow").click(function(){

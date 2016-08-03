@@ -35,10 +35,10 @@ h4 {
     display: block;
 }
 
-a:hover {
-    font-size: large;
-    color: #CCCCCC;
-}
+/*a:hover {*/
+/*    font-size: large;*/
+/*    color: #CCCCCC;*/
+/*}*/
 
 
 /*#region HeaderImages*/
@@ -690,4 +690,14 @@ fieldset[disabled] .btn-facebook.active {
 
 .img-responsive {
     margin: 0 auto;
+}
+
+
+#accordion {
+    width: 85%;
+    margin: 2rem auto;
+}
+#accordion .panel-heading {
+    background-color: #002753;
+    color: #fff;
 }
