@@ -701,3 +701,7 @@ fieldset[disabled] .btn-facebook.active {
     background-color: #002753;
     color: #fff;
 }
+
+.teamCaption {
+    text-align: center;
+}
