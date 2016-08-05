@@ -284,6 +284,11 @@ a:hover {
 /*#endregion reviews*/
 
 /*#region faq*/
+#faq-accordion {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 button.accordion {
     background-color: #0F2245;
     color: #fff;
