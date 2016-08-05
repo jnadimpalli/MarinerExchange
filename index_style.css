@@ -35,14 +35,12 @@ h4 {
     display: block;
 }
 
-/*a:hover {*/
-/*    font-size: large;*/
-/*    color: #CCCCCC;*/
-/*}*/
-
+a:hover {
+    font-size: large;
+    color: #CCCCCC;
+}
 
 /*#region HeaderImages*/
-
 .header-img {
     width: 100%;
     height: 400px;
@@ -124,93 +122,63 @@ h4 {
     margin: -1900px 0 0 -400px;
     zoom: 50%;
 }
-
-
 /*#endregion HeaderImages*/
 
-
 /*#region OurProduct */
+.content {
+    width: 60%;
+}
 
+#about-product {
+    overflow: hidden;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
 
-/*#whatIsIt {*/
+#whatIsIt {
+    margin-top: 100px;
+}
 
+#app-store-download {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
 
-/*    margin-left: 350px;*/
+#marExDesc {
+    float: left;
+}
 
+#marExDesc h2 {
+    text-align: center;
+}
 
-/*    margin-top: 100px;*/
+.home-screen {
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    zoom: 75%;
+}
 
-
-/*}*/
-
-
-/*#app-store-download {*/
-
-
-/*    margin-left: 270px;*/
-
-
-/*    margin-top: 100px;*/
-
-
-/*}*/
-
-
-/*#marExDesc {*/
-
-
-/*    float: left;*/
-
-
-/*}*/
-
-
-/*.right-img {*/
-
-
-/*    float: right;*/
-
-
-/*    display: inline-block;*/
-
-
-/*    margin-right: 150px;*/
-
-
-/*    margin-top: 50px;*/
-
-
-/*    margin-bottom: 100px;*/
-
-
-/*    zoom: 75%;*/
-
-
-/*}*/
-
-
-/*#how-it-works h2 {*/
-
-
-/*    text-align: center;*/
-
-
-/*}*/
+#how-it-works h2 {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
 
 #how-it-works-imgs {
     display: flex;
     justify-content: space-between;
     margin-top: 75px;
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: 100px;
     height: auto;
 }
 
 #how-it-works-imgs img {
-    display: inline-block;
-    margin-left: 25px;
-    margin-right: 25px;
+    height: auto;
 }
 
 .selected-img {
@@ -221,66 +189,26 @@ h4 {
     opacity: .5;
 }
 
-.left-arrow,
-.right-arrow {
-    /*display:block;*/
-    /*font-size: 10rem;*/
-    /*text-align:center;*/
-    /*vertical-align: baseline !important;*/
-    /*line-height: inherit;*/
-    /*vertical-align: middle;*/
-    text-align: center;
-    margin-top: 80%;
-    /*position: relative !important;*/
-    /*top:50% !important;*/
-    /* transform: translateY(-80%) !important;*/
+.left-arrow {
+    height: 500px;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+    zoom: 10%;
 }
 
-
-/*.left-arrow {*/
-
-
-/*    height: 500px;*/
-
-
-/*    vertical-align: middle;*/
-
-
-/*    margin: auto;*/
-
-
-/*    zoom: 10%;*/
-
-
-/*}*/
-
-
-/*.right-arrow {*/
-
-
-/*    height: 500px;*/
-
-
-/*    vertical-align: middle;*/
-
-
-/*    margin: auto;*/
-
-
-/*    zoom: 10%;*/
-
-
-/*    transform: scaleX(-1);*/
-
-
-/*}*/
+.right-arrow {
+    height: 500px;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+    zoom: 10%;
+    transform: scaleX(-1);
+}
 
 #how-it-works-txt {
-    width: 50%;
-    margin: auto;
     text-align: center;
     margin-bottom: 10%;
-    font-size: 200%;
 }
 
 .selected-txt {
@@ -291,22 +219,45 @@ h4 {
     display: none;
 }
 
+@media screen and (max-width: 1020px) {
+    .selected-img {
+        display: inline !important;
+    }
 
+    .unselected-img {
+        display: none !important;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    #marExDesc {
+        float: none !important;
+    }
+
+    .home-screen {
+        display: block;
+        margin: auto;
+        float: none !important;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+}
 /*#endregion OurProduct */
 
-
 /*#region reviews*/
-
 #ratings {
-    /*display: flex;*/
+    display: flex;
     justify-content: space-between;
-    margin: 2rem;
+    margin: 75px;
 }
 
 .star-rating {
     display: flex;
     justify-content: space-between;
     margin: auto;
+    width: 50%;
 }
 
 .star-rating img {
@@ -316,11 +267,69 @@ h4 {
 
 .rating-detail {
     text-align: center;
+    width: 60%;
+    margin: auto;
 }
 
+@media screen and (max-width: 1024px){
+    #ratings {
+        display: block;
+        margin: 75px;
+    }
 
+    .star-rating {
+        margin-top: 50px;
+    }
+}
 /*#endregion reviews*/
 
+/*#region faq*/
+button.accordion {
+    background-color: #0F2245;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 150%;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #002753;
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+    margin-bottom: 0px;
+}
+
+div.panel.show {
+    opacity: 1;
+    margin-top: 10px;
+    max-height: 500px;
+    font-size: 150%;
+}
+/*#endregion faq*/
 
 /* NAVBAR STYLING */
 
@@ -426,15 +435,6 @@ h4 {
 
 /*}*/
 
-
-/*.content {*/
-
-
-/*    margin-left: 175px;*/
-
-
-/*}*/
-
 .mainBody {
     width: 90%;
     margin-left: auto;
@@ -485,7 +485,7 @@ h4 {
 }
 
 #review-form {
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
     margin-left: 175px;
     margin-bottom: 75px;
     margin-top: 30px;
@@ -525,20 +525,19 @@ input.radio {
     border: 0;
     color: white;
     background: #002753;
-    box-shadow: none;
+    box-shadow:none;
     border-radius: 0px;
-    width: 12em;
-    height: 4em;
+    width: 12em;  height: 4em;
     font-size: larger;
     margin-top: 15px;
 }
 
 .text-long {
-    width: 50%;
-    border: 3px solid #0F2245;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
+	width: 50%;
+	border: 3px solid #0F2245;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
 }
 
 input:focus,
@@ -550,7 +549,6 @@ textarea:focus {
     text-align: center;
     margin-top: 100px;
 }
-
 
 /* From https://lipis.github.io/bootstrap-social/ */
 
@@ -686,22 +684,5 @@ fieldset[disabled] .btn-facebook.active {
     border-radius: 0.5rem;
     /*background-color: #FFCD00;*/
     /*color: #002753 !important;*/
-}
 
-.img-responsive {
-    margin: 0 auto;
-}
-
-
-#accordion {
-    width: 85%;
-    margin: 2rem auto;
-}
-#accordion .panel-heading {
-    background-color: #002753;
-    color: #fff;
-}
-
-.teamCaption {
-    text-align: center;
 }
