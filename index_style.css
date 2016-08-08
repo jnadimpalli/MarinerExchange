@@ -555,6 +555,15 @@ textarea:focus {
     margin-top: 100px;
 }
 
+
+#team-element {
+	list-style: none;
+  display: inline-block;
+  width: auto;
+	max-width: 30%;
+	height: auto;
+}
+
 /* From https://lipis.github.io/bootstrap-social/ */
 
 .btn-social {
