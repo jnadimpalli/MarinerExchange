@@ -1,10 +1,10 @@
 {
-  "name": "MarinerExchange",
+  "name": "marinerexchange",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,7 @@
   "homepage": "https://github.com/jnadimpalli/MarinerExchange#readme",
   "dependencies": {
     "express": "^4.14.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
