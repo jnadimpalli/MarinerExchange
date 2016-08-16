@@ -1,0 +1,23 @@
+{
+  "name": "MarinerExchange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnadimpalli/MarinerExchange.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jnadimpalli/MarinerExchange/issues"
+  },
+  "homepage": "https://github.com/jnadimpalli/MarinerExchange#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
