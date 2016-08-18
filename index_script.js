@@ -2,6 +2,8 @@
  * Created by Jitesh on 7/29/2016.
  */
 $(document).ready(function(){
+    console.log(screen.width);
+    
     $('#collapseOne').collapse("hide");
 
     
