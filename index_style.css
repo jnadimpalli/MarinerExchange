@@ -40,7 +40,9 @@ a:hover {
     color: #CCCCCC;
 }
 
+
 /*#region HeaderImages*/
+
 .header-img {
     width: 100%;
     height: 400px;
@@ -56,7 +58,8 @@ a:hover {
 .header-img h1 {
     color: white;
     position: absolute;
-    top: 125px;
+    /*top: 125px;*/
+    top: 10%;
     text-align: center;
     font-size: 450%;
     width: 100%;
@@ -122,9 +125,13 @@ a:hover {
     margin: -1900px 0 0 -400px;
     zoom: 50%;
 }
+
+
 /*#endregion HeaderImages*/
 
+
 /*#region OurProduct */
+
 .content {
     width: 60%;
 }
@@ -223,19 +230,15 @@ a:hover {
     .selected-img {
         display: inline !important;
     }
-
     .unselected-img {
         display: none !important;
     }
-
     .content {
         width: 100%;
     }
-
     #marExDesc {
         float: none !important;
     }
-
     .home-screen {
         display: block;
         margin: auto;
@@ -244,9 +247,13 @@ a:hover {
         margin-bottom: 100px;
     }
 }
+
+
 /*#endregion OurProduct */
 
+
 /*#region reviews*/
+
 #ratings {
     display: flex;
     justify-content: space-between;
@@ -271,19 +278,22 @@ a:hover {
     margin: auto;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     #ratings {
         display: block;
         margin: 75px;
     }
-
     .star-rating {
         margin-top: 50px;
     }
 }
+
+
 /*#endregion reviews*/
 
+
 /*#region faq*/
+
 #faq-accordion {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -302,7 +312,8 @@ button.accordion {
     transition: 0.4s;
 }
 
-button.accordion.active, button.accordion:hover {
+button.accordion.active,
+button.accordion:hover {
     background-color: #002753;
 }
 
@@ -334,7 +345,10 @@ div.panel.show {
     max-height: 500px;
     font-size: 150%;
 }
+
+
 /*#endregion faq*/
+
 
 /* NAVBAR STYLING */
 
@@ -490,14 +504,15 @@ div.panel.show {
 }
 
 #review-form {
-	font-family: 'Roboto', sans-serif;
-    margin-left: 175px;
+    font-family: 'Roboto', sans-serif;
+    /*margin-left: 175px;*/
+    margin-left: 10%;
     margin-bottom: 75px;
     margin-top: 30px;
 }
 
 .text-short {
-    width: 50%;
+    width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -530,19 +545,20 @@ input.radio {
     border: 0;
     color: white;
     background: #002753;
-    box-shadow:none;
+    box-shadow: none;
     border-radius: 0px;
-    width: 12em;  height: 4em;
+    width: 12em;
+    height: 4em;
     font-size: larger;
     margin-top: 15px;
 }
 
 .text-long {
-	width: 50%;
-	border: 3px solid #0F2245;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
+    width: 80%;
+    border: 3px solid #0F2245;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }
 
 input:focus,
@@ -555,14 +571,14 @@ textarea:focus {
     margin-top: 100px;
 }
 
-
 #team-element {
-	list-style: none;
-  display: inline-block;
-  width: auto;
-	max-width: 30%;
-	height: auto;
+    list-style: none;
+    display: inline-block;
+    width: auto;
+    max-width: 30%;
+    height: auto;
 }
+
 
 /* From https://lipis.github.io/bootstrap-social/ */
 
@@ -698,12 +714,14 @@ fieldset[disabled] .btn-facebook.active {
     border-radius: 0.5rem;
     /*background-color: #FFCD00;*/
     /*color: #002753 !important;*/
-
 }
-
 
 @media (max-width: 992px) {
-    .navbar, nav {
-    padding-bottom: 10rem !important;
-}
+    .navbar,
+    nav {
+        padding-bottom: 10rem !important;
+    }
+    body {
+        padding-top: 15rem;
+    }
 }
