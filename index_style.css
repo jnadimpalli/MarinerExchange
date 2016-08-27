@@ -415,7 +415,9 @@ div.panel.show {
     color: grey !important;
 }
 
+
 /*Collapse early to prevent row wrapping*/
+
 @media (max-width: 1062px) {
     .navbar-header {
         float: none;
@@ -425,7 +427,7 @@ div.panel.show {
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     }
     .navbar-collapse.collapse {
         display: none!important;
@@ -446,14 +448,18 @@ div.panel.show {
         margin: 15px 0;
     }
     /* since 3.1.0 */
-    .navbar-collapse.collapse.in { 
+    .navbar-collapse.collapse.in {
         display: block!important;
     }
     .collapsing {
         overflow: hidden!important;
     }
-    .navbar-collapse.collapse.in { display: block!important; }
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
 }
+
+
 /*.left {*/
 
 
@@ -764,5 +770,3 @@ fieldset[disabled] .btn-facebook.active {
         padding-top: 15rem;
     }
 }
-
-
