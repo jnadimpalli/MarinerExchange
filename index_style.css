@@ -618,10 +618,6 @@ textarea:focus {
 
 #team-element {
     list-style: none;
-    display: inline-block;
-    width: auto;
-    max-width: 30%;
-    height: auto;
 }
 
 
