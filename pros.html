@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index_style.css">
+    <script src="https://use.fontawesome.com/3e4c98c63f.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!--<script src"./public/js/jquery-3.1.0.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+    <script src="index_script.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Mariner Exchange</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div class="container-fluid">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="#">
+                        <img alt="Mariner Exchange" src="./marex_logo_white copy.png">
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav red">
+                    <li><a href="#ourProduct">Our Product <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#writeReview">Write a Review</a></li>
+                    <li><a href="#serviceProviders">Service Providers</a></li>
+                    <li><a href="#weather">Weather</a></li>
+                    <li><a href="#aboutUs">About</a></li>
+                    <li><a href="#contactUs">Contact Us</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="/pros">For Pros</a></li>
+                    <li><a href="#facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid" id="bannerContainer">
+        <div id="bannerHolder">
+            <div id="content">
+                <div class="header-img">
+                    <img src="project-imgs/header-imgs/header-img.png">
+                    <h1>Connecting Boaters with Marine Services</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <!--Div that will hold all the content after the header-->
+        <div class="container-fluid">
+            <div class="mainBody">
+                <div id="contactUs">
+                    <!--Using this image for now as a dummy-->
+                    <div id="contact-us-header-img" class="sub-header-img">
+                        <img src="project-imgs/header-imgs/contact-us-header-img.jpg">
+                        <h2 class="large-txt">Contact Us</h2>
+                    </div>
+                    
+                    <h2 style="text-align: center"><b>Submit your profile to start your free trial!</b></h2>
+                    
+                        <form id="pro-form" method="post" action="pro_acceptor.php" accept-charset="UTF-8">
+                            <fieldset>
+                                <h3>Name (First and Last):</h3>
+                                <input class="text-short" type="text" name="name">
+                                <h3>Email Address:</h3>
+                                <input class="text-short" type="text" name="email">
+                                <h3>Phone Number:</h3>
+                                <input class="text-short" type="tel" name="phoneNumber">
+                                <h3>Business Name:</h3>
+                                <input class="text-short" type="text" name="businessName">
+                                <h3>Business Location (City, State):</h3>
+                                <input class="text-short" type="text" name="location">
+                                <h3>Company Description:</h3>
+                                <textarea class="text-long" name="add-info" form="pro-form" rows="10"></textarea><br>
+                                <input id="review-submit" type="submit" name="submit" value="Submit">
+                            </fieldset>
+                        </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="footerContainer">
+            <div id="footer">
+                <p>Copyright &copy; 2016 Mariner Exchange, Inc. All rights reserved.</p>
+                <a class="btn btn-social-icon btn-lg btn-facebook" href="#" style="text-align:center"><i
+                    class="fa fa-facebook"></i></a>
+                <br>
+                <br>
+                <button type="button" id="questionButton" class="btn">Questions? Email Us!</button>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
